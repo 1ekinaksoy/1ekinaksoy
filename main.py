@@ -1,21 +1,20 @@
-gun_sayisi: int = int(input("Lütfen öğrenmek istediğiniz günün üzerine girin: "))
+isim: str = str(input("İsminiz: "))
+vize: int = int(input("Vize Notunuz: "))
+final: int = int(input("Final Notunuz: "))
 
-if gun_sayisi > 7 or gun_sayisi < 1:
-      print("Hatali gun sayisi")
-elif gun_sayisi == 1:
-      print("Yevmu'l-Eḥad")
-elif gun_sayisi == 2:
-      print("Yevmu'l-İs̠neyn")
-elif gun_sayisi == 3:
-      print("Yevmu's̠-S̠ülās̠ā'")
-elif gun_sayisi == 4:
-      print("Yevmu'l-Erbi'ā'")
-elif gun_sayisi == 5:
-      print("Yevmu'l-Hamise")
-elif gun_sayisi == 6:
-      print("Yevmu'l-Cumu'a")
-elif gun_sayisi == 7:
-      print("Yevmu's-Sebt")
+sonuc: float = float((vize * 0.4) + (final * 0.6))
+
+print(f"Ortalama: {sonuc}")
+if sonuc > 84.9:
+     print("AA")
+elif sonuc > 74.9 and sonuc < 85:
+     print("BA")
+elif sonuc > 59.9 and sonuc < 75:
+     print("CB")
+elif sonuc > 49.9 and sonuc < 60:
+     print("CC")
+else:
+     print("FF")
 
 
 
